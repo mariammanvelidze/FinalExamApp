@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2B42"
+    tools:context=".AddBookActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:text="Author:"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/authorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/authorTextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter author name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:text="Book's name:"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/authorEditText"/>
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter book's name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/yearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:text="Year:"
+        android:textStyle="bold"
+        android:layout_below="@id/titleEditText"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/yearTextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter book's publishition year"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yearEditText"
+        android:layout_alignEnd="@+id/yearEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add book"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
